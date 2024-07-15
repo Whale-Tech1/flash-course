@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #a1c3ff;
+}
+
+img{
+    max-width:100px ;  
+}
+
+h1
+h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar{
+    background: #3474e6;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar.logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a :hover{
+    color: lightblue;
+}
+
+.navbar.container{
+    display: flex;
+    align-items:center;
+    height: 100px;
+    justify-content: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.header{
+    background-color:#0151cc;
+    color: #fff;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 100px;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+   max-width: 300px;
+
+}
+
+.header.container{
+    display: flexa;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 1;
+    background: #0a51cc;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
+.box i{
+    margin-right: 10px;
+}
+
+@media (max-width:768px) {
+    .header.container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .boxes.container{
+        display: block;
+        text-align: center;
+    }
+    .header {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
